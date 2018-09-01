@@ -1,7 +1,7 @@
 {
-  "name": "kirin-strap-demo",
+  "name": "[projectName]",
   "version": "1.0.0",
-  "description": "",
+  "description": "[description]",
   "main": "index.js",
   "scripts": {
     "build-client:dev": "kirin-strap build-client --dev",
@@ -11,16 +11,9 @@
     "build-server:debug": "kirin-strap build-server --debug",
     "build-server:pord": "kirin-strap build-server --pord"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "[author]",
+  "license": "MIT",
   "dependencies": {
-    "@babel/runtime": "^7.0.0-beta.55",
-    "alphabetjs": "^0.1.4",
-    "express": "^4.16.3",
-    "kirin-strap": "git+https://github.com/KellerLong/kirin-strap.git",
-    "mock": "^0.1.1",
-    "mockjs": "^1.0.1-beta3",
-    "tslint-react": "^3.6.0",
-    "webpack-dev-server": "^3.1.5"
+    "kirin-strap": "git+https://github.com/KellerLong/kirin-strap.git"
   }
 }
