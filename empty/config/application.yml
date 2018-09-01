@@ -1,0 +1,49 @@
+active: dev # 加载其他配置信息
+log:
+  level: INFO # 日志等级 默认 INFO
+output:
+  dir: dist # 静态资源输出目录 默认 dist
+  dir-service: dist-service # 服务端渲染输出目录 默认 dist-service
+# 定义网络  可以定义多个网络 在 services 层调用
+network:
+  # default 是默认值 即使不设置 默认亦是如此 如需更改默认值 修改 default 即可
+  defaut:
+    origin:
+    header:
+      Content-Type: 'text/html;charset=utf-8'
+    timeout: 0
+    web-worker: false
+  custom: # 自定义网络在网络层调用
+    origin: '//service.kellerlong.com'
+    header: ''
+    timeout: 3000
+    webworker: false
+# PWA 配置
+pwa:
+  app-name: keller 的博客
+  app-short-name: keller's blog
+  app-short-description: the are keller's blog
+  app-background-color: #fff
+  app-icon: assetc/global/icon.png
+# 资源 CDN 路径
+cdn:
+  default: //
+  js:
+    common: //cdn.kellerlong.com
+    private: //cdn.kellerlong.com
+  css:
+    common: //cdn.kellerlong.com
+    private: //cdn.kellerlong.com
+# dns 预解析
+dns:
+  pre:
+    dns1: kellerlong.com
+    dns2: cnd.kellerlong.com
+    dns3: static.kellerlong.com
+
+
+# 自定义数据
+custom:
+  title: 这是自定义数据
+  name: key随便写
+  des: 使用方式请看文档
